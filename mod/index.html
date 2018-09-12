@@ -68,4 +68,50 @@
 		</footer>
 	
 	</body>
+$(document).ready(function(){
+		$(".boxi").hover(function(){
+			$("#druga").animate({
+				height: 'toggle'
+			});
+		});
+	 });
+
+	$(document).ready(function(){
+		$("h1").hover(function(){
+			$("h1").addClass("pink");
+			
+		});
+	});
+
+	$(document).ready(function(){
+		$("p").hover(function(){
+			$("#sent").fadeOut();
+			
+		});
+	});
+
+	$(document).ready(function(){
+		$("p").hover(function(){
+			$("#sent").fadeIn(3500);
+			
+		});
+	});
+	
+	
+	$(document).ready(function(){
+		$("h2").hover(function(){
+			$("h2").fadeOut(3000);
+			
+		});
+	});
+	
+	$(document).ready(function(){	
+	$("#sent").mouseover(function(){
+			$("#sent").css("background-color", "grey");
+		});
+		$("#sent").mouseout(function(){
+			$("#sent").css("background-color", "pink");
+		});
+	});
+</script>
 <html>
