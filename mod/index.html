@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Bookstore</title>
+        <meta name="author" content="Matea Bekan">
+        <meta name="description" content="prva">
+        <link href="./css/css.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+		<header>
+			<div class="container">
+				<div id="brand">
+					<h1> Bookstore </h1>
+				</div>
+			<nav>
+				<ul>
+					<li id="boja"><a href="index.html">Home </a> </li>
+					<li><a href="History.html">History </a> </li>
+					<li><a href="Events.html">Events </a> </li>
+				</ul>
+				</nav>
+				</div>
+		</header>
+		
+	<section id="show">
+		<div class="container">
+			<h1> Clarities bookstore </h1>
+		<p id="sent"> “Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.” 
+― Neil Gaiman, Coraline</p>
+		</div>
+	</section>
+	
+	<section id="newsletter">
+		<div class="container">
+			<h2> Subscribe to our Newsletter </h2>
+				<form>
+					<input type="email" placeholder="EnterEmail">
+					<button type="submit" class="button1"> Subscribe </button>
+				</form>
+		</div>
+	</section>
+
+	<section id="box">
+		<div class="container">
+			<div class="boxi"> 
+			<img src="./img/prvi.jpg">
+				<h3> Toni Morisson</h3>
+				 <p> “It is what you read when you don't have to that determines what you will be when you can't help it.” </p>
+			</div>
+			<div class="boxi"> 
+			<img src="./img/drugi.jpg" id="druga">
+				<h3> Madeleine L'Engle</h3>
+				 <p> “You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.” </p>
+			</div>
+			<div class="boxi"> 
+			<img src="./img/treci.jpg">
+				<h3> William Styron</h3>
+				 <p>“A great book should leave you with many experiences, and slightly exhausted at the end. You live several lives while reading.”  </p>
+			</div>
+		</div>
+		</div>
+	</section>
+		
+		<footer>
+		 <p> Matea, Copyright &copy; 2018 </p>
+		</footer>
+	
+	
+<script>
+
+
+	$(document).ready(function(){
+		$(".boxi").hover(function(){
+			$("#druga").animate({
+				height: 'toggle'
+			});
+		});
+	 });
+
+	$(document).ready(function(){
+		$("h1").hover(function(){
+			$("h1").addClass("pink");
+			
+		});
+	});
+
+	$(document).ready(function(){
+		$("p").hover(function(){
+			$("#sent").fadeOut();
+			
+		});
+	});
+
+	$(document).ready(function(){
+		$("p").hover(function(){
+			$("#sent").fadeIn(3500);
+			
+		});
+	});
+	
+	
+	$(document).ready(function(){
+		$("h2").hover(function(){
+			$("h2").fadeOut(3000);
+			
+		});
+	});
+	
+	$(document).ready(function(){	
+	$("#sent").mouseover(function(){
+			$("#sent").css("background-color", "grey");
+		});
+		$("#sent").mouseout(function(){
+			$("#sent").css("background-color", "pink");
+		});
+	});
+</script>
+
+
+
+
+	
+</script>
+	</body>
+<html>
