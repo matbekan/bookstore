@@ -1,2 +1,2 @@
-# bookstore
+# bookstore jquery
 rwd
